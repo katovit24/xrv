@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio"
+    android:id="@+id/frInicio"
+    android:background="@drawable/fondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/notas"
+            android:backgroundTint="@color/moradoTransparente"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:drawableTop="@drawable/task_24px"
+            android:fontFamily="@font/menu"
+            android:text="NOTAS"
+            android:textSize="15sp"
+            android:textColor="#49454F"
+            app:cornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horario"
+            app:strokeColor="#49454F"
+            app:strokeWidth="6dp" />
+
+        <Button
+            android:id="@+id/aulas"
+            android:backgroundTint="@color/moradoTransparente"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:drawableTop="@drawable/door_open_24px"
+            android:fontFamily="@font/menu"
+            android:text="AULAS"
+            android:textColor="#49454F"
+            android:textSize="15sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info"
+            app:strokeColor="#49454F"
+            app:strokeWidth="6dp" />
+
+        <Button
+            android:id="@+id/asignaturas"
+            android:backgroundTint="@color/moradoTransparente"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="32dp"
+            android:drawableTop="@drawable/dictionary_24px"
+            android:fontFamily="@font/menu"
+            android:text="ASIGNATURAS"
+            android:textSize="14sp"
+            android:textColor="#49454F"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aulas"
+            app:strokeColor="#49454F"
+            app:strokeWidth="6dp" />
+
+
+
+        <Button
+            android:id="@+id/horario"
+            android:backgroundTint="@color/moradoTransparente"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:drawableTop="@drawable/calendar_clock_24px"
+            android:fontFamily="@font/menu"
+            android:text="HORARIO"
+            android:textColor="#49454F"
+            android:textSize="15sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info"
+            app:strokeColor="#49454F"
+            app:strokeWidth="6dp" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="311dp"
+            android:layout_height="78dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Hola hola"
+            android:textColor="#49454F"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.097" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
