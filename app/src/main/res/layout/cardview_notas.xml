@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewNotas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:animateLayoutChanges="true"
+    app:cardUseCompatPadding="true"
+    android:backgroundTint="#59E356FB"
+    android:background="@drawable/borde_text"
+    android:orientation="horizontal"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
+            android:id="@+id/linearCardNotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/cardImgNotas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginStart="8dp"
+                android:padding="4dp"
+                android:src="@drawable/birrete"
+                />
+
+            <TextView
+                android:id="@+id/cardNtAsig"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/fredoka"
+                android:gravity="center"
+                android:text="INGLES"
+                android:autoSizeMaxTextSize="25dp"
+                android:padding="8sp"
+                android:textAlignment="center"
+                android:textColor="@color/textoPrincipal"
+
+                />
+
+            <TextView
+                android:id="@+id/cardNota"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/fredoka"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="9"
+                android:autoSizeMaxTextSize="35dp"
+                android:padding="8sp"
+                android:textAlignment="center"
+                android:textColor="@color/textoPrincipal"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,34 +8,22 @@
     android:id="@+id/frAulas"
     android:background="@drawable/fondo">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/titulo" />
-
             <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="match_parent"
             android:layout_height="95dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
             android:background="@drawable/aula"
             android:alpha="0.6"
-            app:strokeColor="@color/black"
-            app:strokeWidth="2dp"
+            app:strokeColor="#49454F"
+            app:strokeWidth="1dp"
             android:elevation="4dp"
             app:shapeAppearance="@style/redondeados"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -48,24 +36,32 @@
                 android:layout_width="320dp"
                 android:layout_height="95dp"
                 android:layout_marginLeft="32dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginRight="32dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:gravity="center"
                 android:text="AULAS"
-                android:textColor="#49454F"
+                android:textColor="@color/black"
                 android:textSize="50dp"
                 android:fontFamily="@font/fredoka"
                 android:elevation="8dp"
                 android:translationZ="8dp"/>
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reciclerAulas"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
 
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
-</ScrollView>

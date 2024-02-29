@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Inicio"
     android:id="@+id/frInicio"
+    android:tag="TagInicio"
     android:background="@drawable/fondo">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,7 +25,7 @@
             android:fontFamily="@font/menu"
             android:text="NOTAS"
             android:textSize="15sp"
-            android:textColor="#49454F"
+            android:textColor="@color/textoPrincipal"
             app:cornerRadius="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/horario"
@@ -41,7 +42,7 @@
             android:drawableTop="@drawable/door_open_24px"
             android:fontFamily="@font/menu"
             android:text="AULAS"
-            android:textColor="#49454F"
+            android:textColor="@color/textoPrincipal"
             android:textSize="15sp"
             app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +61,7 @@
             android:fontFamily="@font/menu"
             android:text="ASIGNATURAS"
             android:textSize="14sp"
-            android:textColor="#49454F"
+            android:textColor="@color/textoPrincipal"
             app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/aulas"
@@ -79,7 +80,7 @@
             android:drawableTop="@drawable/calendar_clock_24px"
             android:fontFamily="@font/menu"
             android:text="HORARIO"
-            android:textColor="#49454F"
+            android:textColor="@color/textoPrincipal"
             android:textSize="15sp"
             app:cornerRadius="20dp"
             app:layout_constraintStart_toStartOf="parent"

@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="moradoTransparente">#26E356FB</color>
+    <color name="textoPrincipal">#2C2A30</color>
 </resources>

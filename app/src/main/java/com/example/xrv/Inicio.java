@@ -1,15 +1,26 @@
 package com.example.xrv;
 
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.activity.OnBackPressedDispatcher;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.google.android.material.internal.CollapsingTextHelper;
+
+import java.util.Objects;
 
 
 public class Inicio extends Fragment {
@@ -17,8 +28,12 @@ public class Inicio extends Fragment {
 
     Button horario, aulas, notas, asignaturas;
     View vista;
+    Inicio inicio;
+    Principal principal = new Principal();
+    Context context = getContext();
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         }
 
@@ -72,9 +87,13 @@ public class Inicio extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+
         
+
         return vista;
     }
+
 
 
     
@@ -85,6 +104,25 @@ public class Inicio extends Fragment {
         asignaturas = vista.findViewById(R.id.asignaturas);
     }
 
+    public void onBackPressed(){
 
+            AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+            builder.setMessage("¿Desea Salir de la aplicación?");
+            builder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+
+                    inicio.onDestroy();
+                }
+            }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    dialogInterface.dismiss();
+                }
+            });
+            builder.show();
+
+
+    }
 
 }
