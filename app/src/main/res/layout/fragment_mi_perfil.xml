@@ -67,7 +67,7 @@
             android:fontFamily="@font/fredoka"
             android:text="Victor Manuel"
             android:textSize="20dp"
-            android:background="@drawable/borde_text"
+            android:background="@drawable/borde_text2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/describeNom" />
@@ -98,7 +98,7 @@
             android:fontFamily="@font/fredoka"
             android:text="De Mendonça"
             android:textSize="20dp"
-            android:background="@drawable/borde_text"
+            android:background="@drawable/borde_text2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/describeApe1" />
@@ -129,7 +129,7 @@
             android:fontFamily="@font/fredoka"
             android:text="Esteban"
             android:textSize="20dp"
-            android:background="@drawable/borde_text"
+            android:background="@drawable/borde_text2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/describeApe2" />
@@ -160,7 +160,7 @@
             android:fontFamily="@font/fredoka"
             android:text="victor@gmail.com"
             android:textSize="20dp"
-            android:background="@drawable/borde_text"
+            android:background="@drawable/borde_text2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/describeEmail" />

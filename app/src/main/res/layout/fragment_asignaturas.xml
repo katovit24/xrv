@@ -1,35 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Asignaturas"
+    tools:context=".Aulas"
     android:id="@+id/frAsignaturas"
     android:background="@drawable/fondo">
 
-    <FrameLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="95dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/asignaturas"
+            android:alpha="0.4"
+            app:strokeColor="#49454F"
+            app:strokeWidth="1dp"
+            android:elevation="4dp"
+            app:shapeAppearance="@style/redondeados"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tituloAsignaturas"
+            />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginRight="32dp"
-                android:layout_marginBottom="32dp"
-                android:text="TextView"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            android:text="ASIGNATURAS"
+            android:textColor="@color/black"
+            android:textSize="48dp"
+            android:fontFamily="@font/fredoka"
+            android:elevation="8dp"
+            android:translationZ="8dp"/>
 
-    </FrameLayout>
-</ScrollView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reciclerAsignaturas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tituloAsignaturas" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
