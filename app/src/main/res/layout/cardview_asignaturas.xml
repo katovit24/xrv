@@ -21,16 +21,7 @@
         android:layout_height="80dp">
 
 
-        <ImageView
-            android:id="@+id/cardImgAsignatura"
-            android:layout_width="75dp"
-            android:layout_height="80dp"
-            android:padding="6dp"
-            android:src="@drawable/birrete"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/linearCardAsignaturas"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+
 
         <LinearLayout
             android:id="@+id/linearCardAsignaturas"
@@ -38,7 +29,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/cardImgAsignatura"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
@@ -47,7 +38,7 @@
                 android:id="@+id/cardAsAsig"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="3"
+                android:layout_weight="55"
                 android:autoSizeMaxTextSize="25dp"
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/fredoka"
@@ -55,7 +46,7 @@
                 android:padding="4sp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:text="PROGRAMACIÓN DE SERVICIOS Y PROCESOS "
+                android:text="PROGRAMACIÓN DE SERVICIOS Y PROCESOS"
                 android:textAlignment="center"
                 android:textColor="@color/textoPrincipal"
 
@@ -65,7 +56,7 @@
                 android:id="@+id/cardAsProfesor"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="45"
                 android:autoSizeMaxTextSize="25dp"
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/fredoka"

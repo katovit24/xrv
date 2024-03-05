@@ -31,7 +31,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
     EditText contrasenaReg;
     Button boton;
     RequestQueue requestQueue;
-    private static final String URL1 = "http://192.168.59.41/xrv/save.php";
+    private static final String URL1 = "http://192.168.11.89/xrv/save.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

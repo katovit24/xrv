@@ -25,4 +25,9 @@ public class CardViewNotas {
     public void setNtNotas(String ntNotas) {
         this.ntNotas = ntNotas;
     }
+
+    @Override
+    public String toString() {
+        return ntAsignatura + ntNotas;
+    }
 }

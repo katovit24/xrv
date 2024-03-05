@@ -2,6 +2,7 @@ package com.example.xrv;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     TextView registro;
     EditText email, password;
     Button boton;
-    String URL = "http://10.241.43.234/xrv/validar_usuario.php";
+    String URL = "http://192.168.11.89/xrv/validar_usuario.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
+
     }
 
 
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         boton = findViewById(R.id.botonEntrar);
     }
-    private void registrar (){
+    /*private void registrar (){
         Intent registrar = new Intent(this,Registro.class);
         startActivity(registrar);
     }
@@ -76,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         acceder.putExtra("email", email.getText().toString());
         startActivity(acceder);
         finish();
-    }
+    }*/
 
     private void validarUsuario(String URL){
         StringRequest stringRequest=new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
@@ -92,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     if (jsonArray.length() > 0) {
                         JSONObject jsonObjectUsuario = jsonArray.getJSONObject(0);
                         Intent intent = new Intent(getApplicationContext(), Principal.class);
+                        intent.putExtra("email", email.getText().toString());
                         startActivity(intent);
                         finish();
                     } else {

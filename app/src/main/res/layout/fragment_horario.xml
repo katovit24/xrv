@@ -42,6 +42,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:gravity="center"
+            android:id="@+id/textohorario"
             android:text="HORARIO"
             android:textColor="@color/black"
             android:textSize="50dp"

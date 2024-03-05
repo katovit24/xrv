@@ -19,7 +19,7 @@
             android:layout_marginTop="48dp"
             android:fontFamily="@font/fredoka"
             android:gravity="center"
-            android:text="Mi Perfil"
+            android:text="MI PERFIL"
             android:textSize="35dp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintStart_toStartOf="parent"
