@@ -11,6 +11,17 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/neon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:src="@drawable/neon2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
 
         <TextView
             android:id="@+id/perfil"
@@ -19,7 +30,7 @@
             android:layout_marginTop="48dp"
             android:fontFamily="@font/fredoka"
             android:gravity="center"
-            android:text="Mi Perfil"
+            android:text="MI PERFIL"
             android:textSize="35dp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +91,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginRight="24dp"
             android:fontFamily="@font/fredoka"
-            android:text="Primer Apellido"
+            android:text="Apellidos"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -111,7 +122,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginRight="24dp"
             android:fontFamily="@font/fredoka"
-            android:text="Segundo Apellido"
+            android:text="Ciclo"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"

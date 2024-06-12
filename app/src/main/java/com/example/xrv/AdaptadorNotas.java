@@ -18,17 +18,15 @@ public class AdaptadorNotas extends RecyclerView.Adapter<AdaptadorNotas.ViewHold
     private Context context;
 
     public AdaptadorNotas(ArrayList<CardViewNotas> itemlist, Context context) {
-
         this.mInflater = LayoutInflater.from(context);
         this.mData = itemlist;
     }
 
     @Override
     public int getItemCount(){
-
         return  mData.size();
     }
-
+    @NonNull
     @Override
     public AdaptadorNotas.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
         View view = mInflater.inflate(R.layout.cardview_notas, parent, false);
@@ -38,7 +36,6 @@ public class AdaptadorNotas extends RecyclerView.Adapter<AdaptadorNotas.ViewHold
     @Override
     public void onBindViewHolder(final AdaptadorNotas.ViewHolder holder, final int position) {
         holder.bindData(mData.get(position));
-
     }
 
     public void setItems ( ArrayList<CardViewNotas> items){
